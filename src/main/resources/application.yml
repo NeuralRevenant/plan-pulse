@@ -1,0 +1,39 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: PlanPulse
+  data:
+    mongodb:
+      uri:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+jwt:
+  secret:
+  expiration: 86400
+
+logging:
+  level:
+    root: INFO
+    com.project.planpulse: DEBUG
+
+app:
+  reset-password-url: http://localhost:5001/reset-password?token= # reset token web-url
+  frontend-url:
+
+security:
+  headers:
+    frame-options: DENY # protect against clickjacking
+    content-security-policy: "default-src 'self'; script-src 'self'" # basic CSP for added security
+

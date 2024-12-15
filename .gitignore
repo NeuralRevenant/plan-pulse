@@ -1,0 +1,54 @@
+# Common ignore patterns
+HELP.md
+.gradle/
+build/
+
+# Ignore gradle wrapper scripts
+gradlew
+gradlew.bat
+
+# Gradle wrapper (allow specific file)
+!gradle/wrapper/gradle-wrapper.jar
+
+# Eclipse/STS IDE
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+bin/
+!src/main/**/bin/
+!src/test/**/bin/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.ipr
+out/
+!src/main/**/out/
+!src/test/**/out/
+
+# NetBeans IDE
+nbproject/private/
+nbbuild/
+dist/
+.nbm/
+
+# Visual Studio Code
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Ignore JARs
+*.jar
+
+# Application-specific
+/src/main/resources/application.properties
+
+node_modules
