@@ -1,6 +1,5 @@
 package com.project.planpulse.model;
 
-import com.project.planpulse.validation.ValidPassword;
 import com.project.planpulse.validation.ValidUsername;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
